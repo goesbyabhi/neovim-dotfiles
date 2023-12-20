@@ -24,7 +24,7 @@ vim.opt.tabstop = 4			-- tabs = 4 spaces
 vim.opt.shiftwidth = 4
 vim.opt.pumheight = 4		-- number of items in popup menu
 vim.opt.showtabline = 2		-- always show tab line
-vim.opt.laststatus = 2		-- always show statusline
+vim.opt.laststatus = 3		-- always show statusline (switch to 2 if you want a statusline for each window, set to 3 if you want a global statusline)
 vim.opt.signcolumn = "auto"
 vim.opt.expandtab = false	-- expand tab
 vim.opt.smartindent = true
