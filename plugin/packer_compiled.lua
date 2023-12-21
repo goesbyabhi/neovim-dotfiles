@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/abhishek/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
+  ["cheatsheet.nvim"] = {
+    loaded = true,
+    path = "/home/abhishek/.local/share/nvim/site/pack/packer/start/cheatsheet.nvim",
+    url = "https://github.com/sudormrfbin/cheatsheet.nvim"
+  },
   ["cloak.nvim"] = {
     loaded = true,
     path = "/home/abhishek/.local/share/nvim/site/pack/packer/start/cloak.nvim",
@@ -178,6 +183,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/abhishek/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["popup.nvim"] = {
+    loaded = true,
+    path = "/home/abhishek/.local/share/nvim/site/pack/packer/start/popup.nvim",
+    url = "https://github.com/nvim-lua/popup.nvim"
   },
   ["refactoring.nvim"] = {
     loaded = true,

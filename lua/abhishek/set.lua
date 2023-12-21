@@ -30,7 +30,7 @@ vim.opt.expandtab = false	-- expand tab
 vim.opt.smartindent = true
 vim.opt.showcmd = true
 vim.opt.cmdheight = 1
-vim.opt.scrolloff = 999		-- scroll page when cursor is 8 lines
+vim.opt.scrolloff = 20		-- scroll page when cursor is 8 lines
 vim.opt.sidescrolloff = 15 	-- scroll page when cursor is 8 lines
 vim.opt.fillchars='eob: '
 -- Random ass clipboard fix lol
