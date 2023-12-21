@@ -65,3 +65,10 @@ vim.api.nvim_create_autocmd({"TermOpen", "BufEnter"}, {
 		-- vim.cmd([[ startinsert ]])
 	end,
 })
+
+-- Test
+vim.api.nvim_create_autocmd({"InsertEnter"}, {
+	callback = function()
+		vim.cmd("norm zz")
+	end
+})
