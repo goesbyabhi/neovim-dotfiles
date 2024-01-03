@@ -30,7 +30,7 @@ vim.opt.expandtab = false	-- expand tab
 vim.opt.smartindent = true
 vim.opt.showcmd = true
 vim.opt.cmdheight = 1
-vim.opt.scrolloff = 20		-- scroll page when cursor is 8 lines
+-- vim.opt.scrolloff = 20		-- scroll page when cursor is 8 lines
 vim.opt.sidescrolloff = 15 	-- scroll page when cursor is 8 lines
 vim.opt.fillchars='eob: '
 -- Random ass clipboard fix lol
@@ -67,8 +67,19 @@ vim.api.nvim_create_autocmd({"TermOpen", "BufEnter"}, {
 })
 
 -- Test
-vim.api.nvim_create_autocmd({"InsertEnter"}, {
-	callback = function()
-		vim.cmd("norm zz")
-	end
-})
+-- vim.api.nvim_create_autocmd({"InsertEnter"}, {
+-- 	callback = function()
+-- 		vim.cmd("norm zz")
+-- 	end
+-- })
+
+-- True text centering
+vim.api.nvim_exec([[
+  autocmd CursorMoved,CursorMovedI * lua Center_cursor()
+]], false)
+
+function Center_cursor()
+    local pos = vim.fn.getpos('.')
+    vim.cmd('normal! zz')
+    vim.fn.setpos('.', pos)
+end

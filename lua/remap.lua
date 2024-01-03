@@ -56,6 +56,7 @@ map('n', '<leader>ff', '<cmd> Telescope find_files<CR>')
 map('n', '<leader>fw', '<cmd> Telescope live_grep <CR>')
 map('n', '<leader>fb', '<cmd> Telescope buffers <CR>')
 map('n', '<leader>fh', '<cmd> Telescope help_tags <CR>')
+map('n', '<leader>fg', '<cmd> Telescope git_files <CR>')
 
 -- Random Fixes
 map("n", ";", ":")
@@ -66,4 +67,7 @@ map("t", "<C-x>", "<C-\\><C-N>") -- exit terminal mode with Ctrl + x
 map("n", "<A-i>", ":term<CR>") -- Launch terminal mode with Alt + i
 
 -- Clipboards shortcuts
-map("v", "d", '"_d') -- this deletes the text without yanking into the Clipboard
+map("v", "d", '"_d') -- this deletes the text without yanking into the Clipboardj
+
+-- New movement fixes
+map("n", "G", "Gzz") -- this centers the screen when moving to the bottom of the file
