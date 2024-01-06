@@ -24,7 +24,7 @@ local plugins = {
 	},
 	{
 		"theprimeagen/harpoon",
-		-- lazy = true,
+		event = "BufReadPre",
 		config = function()
 			require "plugins.configs.harpoon"
 		end,
