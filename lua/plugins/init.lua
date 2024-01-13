@@ -108,6 +108,20 @@ local plugins = {
 		"github/copilot.vim",
 		-- event = "InsertEnter",
 	},
+	{
+		"stevearc/conform.nvim",
+		event = { "BufReadPre", "BufNewFile" },
+		config = function()
+			require("plugins.configs.formatting")
+		end,
+	},
+	{
+		"mfussenegger/nvim-lint",
+		event = { "BufReadPre", "BufNewFile" },
+		config = function()
+			require("plugins.configs.linting")
+		end,
+	},
 }
 
 local opts = {}
