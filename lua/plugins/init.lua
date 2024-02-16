@@ -122,6 +122,27 @@ local plugins = {
 			require("plugins.configs.linting")
 		end,
 	},
+	{
+       "gbprod/nord.nvim",
+       lazy = false,
+       priority = 1000,
+       config = function()
+         require("plugins.configs.colorscheme")
+       end,
+    },
+	{
+       'nvim-lualine/lualine.nvim',
+       dependencies = { 'nvim-tree/nvim-web-devicons' },
+	   config = function ()
+	   		require("plugins.configs.lualine")
+	   end
+	},
+	{
+		'andweeb/presence.nvim',
+		config = function ()
+			require("plugins.configs.presence")
+		end
+	},
 }
 
 local opts = {}
