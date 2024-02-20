@@ -143,6 +143,9 @@ local plugins = {
 			require("plugins.configs.presence")
 		end
 	},
+	{
+		'tpope/vim-obsession',
+	},
 }
 
 local opts = {}
